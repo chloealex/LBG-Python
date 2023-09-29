@@ -4,6 +4,8 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-EXPOSE 8080
+EXPOSE 8081
+
+ENV PORT = '8081'
 
 ENTRYPOINT [ "python", "lbg.py"]
