@@ -15,7 +15,7 @@ pipeline {
     }
     stage('Build Image') {
       steps {
-        'docker build -t jenkinsimage chloealex/lbg-python'
+        sh 'docker build -t jenkinsimage chloealex/lbg-python'
       }
     }
   }
