@@ -13,9 +13,9 @@ pipeline {
         echo "Hello"
       }
     }
-    stage('Verify Working 2') {
+    stage('Build Image') {
       steps {
-        echo "Hello again"
+        'docker build -t jenkinsimage chloealex/lbg-python'
       }
     }
   }
